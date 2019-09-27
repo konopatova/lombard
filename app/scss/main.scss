@@ -214,6 +214,10 @@ svg {
 .icon {
 	color:white;
 }
+.header__social__list {
+	display: flex;
+	justify-content: space-between;
+}
 
 .header__link {
 	color: white;
@@ -300,11 +304,6 @@ svg {
 
 .header__item {
 	max-width: 340px;	
-/*	display: flex;
-	flex-flow: column;
-	justify-content: center;
-	align-items: center;
-	align-self: center; */
 //	max-height: 340px;
 //	height: 100%;
 	padding: 20px;
