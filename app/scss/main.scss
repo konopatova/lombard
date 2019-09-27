@@ -349,4 +349,36 @@ svg {
 	}
 }
 
+.why {
+	.why__desc {
+		font-size: 24px;
+		font-weight: 600;
+		max-width: 855px;
+		line-height: normal;
+	}
+	.comparison__text {
+		display: block;
+		font-size: 24px;
+		font-weight: 600;
+		max-width: 855px;
+		line-height: normal;
+		margin: 0;
+	}
+}
+
+.comparison__center {
+	max-width: 720px;
+}
+
+.comparison__total {
+	font-weight: 700;
+	font-size: 30px;
+	&.total--red {
+		color: red;
+	}
+	&.total--green {
+		color: green;
+	}
+}
+
 @import "media"; // Always at the end
