@@ -331,4 +331,22 @@ svg {
 	margin-bottom: 20px;
 }
 
+.center__title {
+	font-family: $heading;
+	font-size: 45px;
+	text-transform: uppercase;
+}
+
+.advantages {
+	svg {
+		max-width: 120px;
+	}
+	.adv__desc {
+		font-weight: 700;
+		line-height: normal;
+		font-size: 24px;
+		text-transform: uppercase;
+	}
+}
+
 @import "media"; // Always at the end

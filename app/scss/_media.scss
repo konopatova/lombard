@@ -95,9 +95,23 @@
 		 max-height: 670px;
 		 min-height: 500px;
 	 }
+
+ .center__title {
+		font-size: 19px;
+	}
+
+.advantages {
+	svg {
+		max-width: 65px;
+		max-height: 70px;
+	}
+	.adv__desc {
+	font-size: 9px;
+	}
 }
 
 
+}
 
 /*==========  Mobile First  ==========*/
 

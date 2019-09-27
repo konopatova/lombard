@@ -18,6 +18,13 @@
 
 @font-face {
   font-family: 'Open sans';
+  src: url("../fonts/open-sans-600.woff") format("woff");
+  font-weight: 600;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Open sans';
   src: url("../fonts/open-sans-700.woff") format("woff");
   font-weight: 700;
   font-style: normal;
@@ -18772,6 +18779,23 @@ svg.hidden-sprite {
   margin-bottom: 20px;
 }
 
+.center__title {
+  font-family: "Tenor sans";
+  font-size: 45px;
+  text-transform: uppercase;
+}
+
+.advantages svg {
+  max-width: 120px;
+}
+
+.advantages .adv__desc {
+  font-weight: 700;
+  line-height: normal;
+  font-size: 24px;
+  text-transform: uppercase;
+}
+
 /*==========  Desktop First  ==========*/
 @media (max-width: 991.98px) {
   .logo__block {
@@ -18846,6 +18870,16 @@ svg.hidden-sprite {
   .header {
     max-height: 670px;
     min-height: 500px;
+  }
+  .center__title {
+    font-size: 19px;
+  }
+  .advantages svg {
+    max-width: 65px;
+    max-height: 70px;
+  }
+  .advantages .adv__desc {
+    font-size: 9px;
   }
 }
 
