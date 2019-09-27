@@ -30,6 +30,13 @@
   font-style: normal;
 }
 
+@font-face {
+  font-family: 'Helvetica NC';
+  src: url("../fonts/helvetica-300.woff") format("woff");
+  font-weight: 300;
+  font-style: normal;
+}
+
 /*!
  * Bootstrap Reboot v4.3.1 (https://getbootstrap.com/)
  * Copyright 2011-2019 The Bootstrap Authors
@@ -18426,9 +18433,8 @@ html {
 
 .container {
   width: 100%;
-  min-width: 320px;
-  max-width: 1200px;
-  max-width: 1760px;
+  min-width: 340px;
+  max-width: 1140px;
   margin: 0 auto;
   padding: 0 50px;
   position: relative;
@@ -18563,7 +18569,7 @@ svg.hidden-sprite {
 }
 
 .menu .menu__item {
-  margin-right: 30px;
+  margin-right: 40px;
   position: relative;
 }
 
@@ -18719,35 +18725,45 @@ svg.hidden-sprite {
 
 .header__box {
   background-color: white;
-  max-height: 710px;
   color: black;
-  max-width: -webkit-calc(100% - 10rem);
-  max-width: calc(100% - 10rem);
-  padding: 20px;
-}
-
-.header__item__wrp {
-  max-width: 368px;
-  max-height: 368px;
-  margin-right: 15px;
-  margin-bottom: 15px;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
 }
 
 .header__item {
-  width: 100%;
-  height: 100%;
+  max-width: 340px;
+  /*	display: flex;
+	flex-flow: column;
+	justify-content: center;
+	align-items: center;
+	align-self: center; */
   padding: 20px;
-  margin-right: 20px;
+  cursor: pointer;
 }
 
-.line__border:before {
+.header__item img {
+  margin: 10px;
+}
+
+.header__item:before {
   content: '';
-  border: 2px solid #858585;
-  position: ab;
+  border: 1px solid #858585;
   position: absolute;
   width: 100%;
+  max-width: 350px;
   height: 100%;
+  max-height: 350px;
   bottom: 0;
+}
+
+.header__item .header__item__desc {
+  font-family: 'Helvetica NC';
+  font-size: 24px;
+}
+
+.header__item__wrapper {
+  margin-bottom: 20px;
 }
 
 /*==========  Desktop First  ==========*/
@@ -18757,21 +18773,35 @@ svg.hidden-sprite {
   }
 }
 
-@media (max-width: 767.98px) {
-  .header__slider .header__slider__inner {
-    padding-top: 300px;
-  }
-}
-
 @media (max-width: 575.98px) {
-  .header__slider .header__slider__inner {
-    padding-top: 200px;
+  .main__title {
+    font-size: 20px;
   }
-  .work {
-    margin-top: 20px;
+  .header__text {
+    font-size: 10px;
   }
-  .menu__item--cart {
-    margin: 8px 0 auto 0;
+  .sub__title {
+    font-size: 19px;
+  }
+  .header__item {
+    padding: 0;
+  }
+  .header__item:nth-child(2n) {
+    margin-right: 0;
+  }
+  .header__item img {
+    max-width: 100px;
+    margin: 0;
+  }
+  .header__item .header__item__img--3 {
+    max-width: 50px;
+    padding-top: 20px;
+  }
+  .header__item .header__item__desc {
+    font-family: 'Helvetica NC';
+    font-size: 8px;
+    padding: 0;
+    margin: 0;
   }
 }
 
