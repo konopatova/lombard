@@ -203,6 +203,7 @@ svg {
 }
 
 .logo__block {
+	user-select: none;
 	img {
 		&:hover {
 			transform: scale(1.1);
@@ -357,13 +358,21 @@ svg {
 		line-height: normal;
 	}
 	.comparison__text {
-		display: block;
 		font-size: 24px;
 		font-weight: 600;
 		max-width: 855px;
 		line-height: normal;
 		margin: 0;
 	}
+	.comparison__small{
+	font-weight: 400;
+	font-size: 18px;
+	line-height: normal;
+	max-width: 220px;
+}
+	img {
+	user-select: none;
+}
 }
 
 .comparison__center {

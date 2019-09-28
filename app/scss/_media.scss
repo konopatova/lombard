@@ -97,7 +97,7 @@
 	 }
 
  .center__title {
-		font-size: 19px;
+		font-size: 20px;
 	}
 
 .advantages {
@@ -113,8 +113,25 @@
 .why {
 	.why__desc {
 		font-size: 12px;
+		&.comparison__experts {
+			font-weight: 700;
+		}
 	}
+	.comparison__text {
+		font-size: 9px;
+	}
+	.comparison__small{
+	font-size: 7px;
+	font-weight: 700;
+	}
+	.comparison__total {
+	font-size: 11px;
+	}
+	.comparison__main {
+	font-size: 19px;
 }
+	}
+
 
 
 }
