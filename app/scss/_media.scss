@@ -146,13 +146,35 @@
 			font-size: 12px;
 			font-weight: 600;
 			line-height: 14px;
+			margin-bottom: 0;
+		}
+		.cost__item__title {
+			font-size: 13px;
+			max-width: 235px;
+			text-align: center;
+			margin: 0 auto 20px;
+			font-weight: bold;
+		}
+		.cost__item__text {
+			font-size: 10px;
+			text-align: center;
+			font-weight: 600;
 		}
 		.cost__item {
 			display: flex;
 			flex-flow: row wrap;
+		 max-height: 0px;
+		
 		}
 		.cost__item__img {
-			height: 300px;
+			margin-top: -5%;
+			height: 235px;
+			margin-bottom: 0;
+			align-self: flex-start;
+		}
+		.cost__item__img--3 {
+			margin-top: -10%;
+			margin-bottom: 20px;;
 		}
 	}
 
