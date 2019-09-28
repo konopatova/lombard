@@ -19640,13 +19640,15 @@ html {
 
 .container {
   width: 100%;
-  min-width: 340px;
-  max-width: 1140px;
+  max-width: 1920px;
   margin: 0 auto;
-  padding: 0 50px;
   position: relative;
 }
 
+/*
+.wrapper {
+	max-width: 1920px;
+}*/
 html, body {
   height: 100%;
 }
@@ -19950,6 +19952,7 @@ svg.hidden-sprite {
 
 .header__box {
   background-color: white;
+  max-width: 1720px;
   color: black;
   width: 100%;
   height: 100%;
@@ -20003,11 +20006,12 @@ svg.hidden-sprite {
   text-transform: uppercase;
 }
 
-.why .why__desc {
+.desc__center {
   font-size: 24px;
   font-weight: 600;
   max-width: 855px;
   line-height: normal;
+  display: block;
 }
 
 .why .comparison__text {
@@ -20049,6 +20053,59 @@ svg.hidden-sprite {
   color: green;
 }
 
+.cost .cost__desc {
+  line-height: 27px;
+  font-weight: 500;
+}
+
+.cost .cost__item {
+  width: 100%;
+  min-height: 400px;
+  position: relative;
+}
+
+.cost .cost__item__title {
+  font-family: "Tenor sans";
+  font-size: 26px;
+  font-weight: 500;
+  text-transform: uppercase;
+}
+
+.cost .cost__item__desc {
+  font-size: 18px;
+  line-height: 1.6;
+  font-weight: 400;
+  max-width: 540px;
+}
+
+.cost .cost__item__img {
+  margin-top: -3%;
+  width: 100%;
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center top;
+}
+
+.cost .cost__item__img--1 {
+  background-image: url(../img/diamonds.jpg);
+}
+
+.cost .cost__item__img--2 {
+  background-image: url(../img/design.png);
+}
+
+.cost .cost__item__img--3 {
+  background-image: url(../img/brand.png);
+}
+
+.cost .cost__item__img--4 {
+  background-image: url(../img/sertificate.png);
+}
+
+.cost .cost__item__img--5 {
+  background-image: url(../img/oldnew.png);
+}
+
 /*==========  Desktop First  ==========*/
 @media (max-width: 991.98px) {
   .logo__block {
@@ -20074,6 +20131,10 @@ svg.hidden-sprite {
   .header__phone,
   .menu {
     display: none;
+  }
+  .why .comparison__main {
+    font-size: 21px;
+    max-width: 377px;
   }
 }
 
@@ -20152,6 +20213,26 @@ svg.hidden-sprite {
   }
   .why .comparison__main {
     font-size: 19px;
+    max-width: 312px;
+  }
+  .cost .cost__desc {
+    font-size: 12px;
+    font-weight: 600;
+    line-height: 14px;
+  }
+  .cost .cost__item {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+    -webkit-flex-flow: row wrap;
+        -ms-flex-flow: row wrap;
+            flex-flow: row wrap;
+  }
+  .cost .cost__item__img {
+    height: 300px;
   }
 }
 

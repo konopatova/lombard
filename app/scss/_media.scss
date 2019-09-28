@@ -40,6 +40,14 @@
 	.menu {
 		display: none;
 	}
+
+	.why {
+	.comparison__main {
+		font-size: 21px;
+		max-width: 377px;
+	}
+}
+	
 }
 
 // ≥576px
@@ -129,7 +137,23 @@
 	}
 	.comparison__main {
 	font-size: 19px;
+	max-width: 312px;
 }
+	}
+
+	.cost {
+		.cost__desc {
+			font-size: 12px;
+			font-weight: 600;
+			line-height: 14px;
+		}
+		.cost__item {
+			display: flex;
+			flex-flow: row wrap;
+		}
+		.cost__item__img {
+			height: 300px;
+		}
 	}
 
 
