@@ -20290,10 +20290,108 @@ svg.hidden-sprite {
   color: white;
   font-size: 18px;
   background-color: black;
+  font-weight: 500;
 }
 
-.footer__contacts .footer__logo__link {
+.footer__contacts .footer__time {
+  font-weight: 300;
+  font-size: 16px;
+}
+
+.footer__contacts .footer__link {
+  color: white;
+  font-weight: 500;
+  -webkit-transition: all 0.3 linear;
+  -o-transition: all 0.3 linear;
+  transition: all 0.3 linear;
+}
+
+.footer__contacts .footer__link:hover {
+  text-decoration: underline;
+  color: #fb565a;
+}
+
+.footer__contacts .footer__logo {
+  margin-bottom: 40px;
+}
+
+.footer__contacts .footer__item {
+  margin-bottom: 20px;
+  padding-left: 54px;
+}
+
+.footer__contacts .footer__item:nth-child(2) {
+  min-height: 50px;
+  background-image: url(../img/location_icon.png);
+  background-position: left;
+  background-size: 30px;
+  background-repeat: no-repeat;
+}
+
+.footer__contacts .footer__item:nth-child(3) {
+  min-height: 40px;
+  background-image: url(../img/time.png);
+  background-position: left;
+  background-size: 30px;
+  background-repeat: no-repeat;
+}
+
+.footer__contacts .footer__item:nth-child(4) {
+  min-height: 40px;
+  background-image: url(../img/phone.png);
+  background-position: left;
+  background-size: 30px;
+  background-repeat: no-repeat;
+}
+
+.footer__contacts .footer__item:nth-child(5) {
+  min-height: 40px;
+  background-image: url(../img/@.png);
+  background-position: left;
+  background-size: 30px;
+  background-repeat: no-repeat;
+}
+
+.footer__contacts .footer__social {
+  margin-top: 20px;
+}
+
+.footer__contacts .footer__social .social__icon__link {
+  max-width: 40px;
+  max-height: 40px;
+  position: relative;
+  font-size: 0;
+  display: inline-block;
+  -webkit-transition: all 0.6s ease;
+  -o-transition: all 0.6s ease;
+  transition: all 0.6s ease;
+  margin-right: 10px;
   cursor: pointer;
+}
+
+.footer__contacts .footer__social .social__icon__link:nth-child(1) {
+  width: 40px;
+  background-image: url(../img/telegram.png);
+  background-position: center;
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+
+.footer__contacts .footer__social .social__icon__link:nth-child(2) {
+  width: 40px;
+  background-image: url(../img/whatsapp.png);
+  background-position: center;
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+
+.footer__contacts .footer__social .social__icon__link:nth-child(3) {
+  margin-right: 0;
+  width: 40px;
+  background-image: url(../img/viber.png);
+  background-position: center;
+  background-size: contain;
+  background-repeat: no-repeat;
 }
 
 /*==========  Desktop First  ==========*/
@@ -20535,6 +20633,24 @@ svg.hidden-sprite {
     position: absolute;
     right: 4vw;
     top: 40%;
+  }
+  .footer__contacts {
+    font-size: 14px;
+  }
+  .footer__contacts .footer__time {
+    font-size: 12px;
+  }
+  .footer__contacts .footer__logo,
+  .footer__contacts .footer__item {
+    margin-bottom: 20px;
+  }
+  .footer__contacts .footer__item {
+    background-image: none;
+    background: none;
+    padding-left: 0;
+  }
+  .footer__contacts .footer__item:nth-child(2), .footer__contacts .footer__item:nth-child(3), .footer__contacts .footer__item:nth-child(4), .footer__contacts .footer__item:nth-child(5) {
+    background: none;
   }
 }
 

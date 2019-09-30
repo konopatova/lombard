@@ -610,9 +610,90 @@ svg {
 	color: white;
 	font-size: 18px;
 	background-color: black;
-	.footer__logo__link {
-		cursor: pointer;
+	font-weight: 500;
+	.footer__time {
+		font-weight: 300;
+		font-size: 16px;
 	}
+	.footer__link {
+		color: white;
+		font-weight: 500;
+		transition: all 0.3 linear;
+		&:hover {
+			text-decoration: underline;
+			color: $accent;
+		}
+	}
+	.footer__logo {
+		margin-bottom: 40px;
+	}
+	.footer__item {
+		margin-bottom: 20px;
+		padding-left: 54px;
+		&:nth-child(2) {
+			min-height: 50px;
+			background-image: url(../img/location_icon.png);
+			background-position: left;
+			background-size: 30px;
+			background-repeat: no-repeat;
+		}
+		&:nth-child(3) {
+			min-height: 40px;
+			background-image: url(../img/time.png);
+			background-position: left;
+			background-size: 30px;
+			background-repeat: no-repeat;
+		}
+		&:nth-child(4) {
+			min-height: 40px;
+			background-image: url(../img/phone.png);
+			background-position: left;
+			background-size: 30px;
+			background-repeat: no-repeat;
+		}
+		&:nth-child(5) {
+			min-height: 40px;
+			background-image: url(../img/@.png);
+			background-position: left;
+			background-size: 30px;
+			background-repeat: no-repeat;
+		}
+	}
+	.footer__social {
+		margin-top: 20px;
+		.social__icon__link {	
+			max-width: 40px;
+			max-height: 40px;
+			position: relative;
+			font-size: 0;
+			display: inline-block;
+			transition: all 0.6s ease;
+			margin-right: 10px;
+			cursor: pointer;
+			&:nth-child(1) {
+				width: 40px;
+				background-image: url(../img/telegram.png);
+				background-position: center;
+				background-size: contain;
+				background-repeat: no-repeat;
+				}
+				&:nth-child(2) {
+				width: 40px;
+				background-image: url(../img/whatsapp.png);
+				background-position: center;
+				background-size: contain;
+				background-repeat: no-repeat;
+				}
+				&:nth-child(3) {
+				margin-right: 0;
+				width: 40px;
+				background-image: url(../img/viber.png);
+				background-position: center;
+				background-size: contain;
+				background-repeat: no-repeat;
+				}
+		}
+}
 }
 
 @import "media"; // Always at the end

@@ -283,8 +283,33 @@
 	}
 }
 
+.footer__contacts {
+	font-size: 14px;
+	.footer__time {
+		font-size: 12px;	
+	}
+	.footer__logo,
+	.footer__item {
+		margin-bottom: 20px;
+	}
+.footer__item {
+	background-image: none;
+	background: none;
+	padding-left: 0;
+	&:nth-child(2), 
+	&:nth-child(3),
+	&:nth-child(4),
+	&:nth-child(5)  {
+		background: none;
+	}
+}
+	}
 
 }
+
+
+
+
 
 /*==========  Mobile First  ==========*/
 
