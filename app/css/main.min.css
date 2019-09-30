@@ -2,6 +2,7 @@
 @import url(../libs/slick-carousel/slick/slick.css);
 @import url(../libs/fontawesome/font-awesome.min.css);
 @import url(../libs/css-hamburgers/hamburgers.css);
+@import url(../libs/owl/assets/owl.carousel.css);
 @font-face {
   font-family: 'Open sans';
   src: url("../fonts/open-sans-300.woff") format("woff");
@@ -20053,6 +20054,12 @@ svg.hidden-sprite {
   color: green;
 }
 
+.cost__bg__wrap {
+  background-color: #eee;
+  width: 100%;
+  height: 100%;
+}
+
 .cost .cost__desc {
   line-height: 27px;
   font-weight: 500;
@@ -20081,6 +20088,7 @@ svg.hidden-sprite {
 .cost .cost__item__img {
   margin-top: -3%;
   width: 100%;
+  min-height: 235px;
   background-repeat: no-repeat;
   background-size: contain;
   background-position: center top;
@@ -20104,6 +20112,71 @@ svg.hidden-sprite {
 
 .cost .cost__item__img--5 {
   background-image: url(../img/oldnew.png);
+}
+
+.slider__buyout .owl-carousel {
+  position: relative;
+}
+
+.slider__buyout .buyout__item {
+  max-width: 340px;
+  margin: 0 auto;
+  padding-top: 130px;
+  background-repeat: no-repeat;
+  background-position: center 0%;
+}
+
+.slider__buyout .buyout__item:before {
+  content: '🡢';
+  font-size: 35px;
+  position: relative;
+  top: 0%;
+  right: -63%;
+}
+
+.slider__buyout .buyout__item--1 {
+  background-size: 90px;
+  background-image: url(../img/ring_icon.png);
+}
+
+.slider__buyout .buyout__item--2 {
+  background-size: 110px;
+  background-image: url(../img/expertiza_icon.png);
+}
+
+.slider__buyout .buyout__item--3 {
+  background-size: 146px;
+  background-image: url(../img/stoimost_icon.png);
+}
+
+.slider__buyout .buyout__item--4 {
+  background-size: 146px;
+  background-image: url(../img/deal_icon.png);
+}
+
+.slider__buyout .buyout__item--4:before {
+  display: none;
+}
+
+.slider__buyout .buyout__title {
+  font-weight: 700;
+  line-height: normal;
+  font-size: 24px;
+  text-transform: uppercase;
+}
+
+.slider__buyout .buyout__desc {
+  font-weight: 600;
+  line-height: normal;
+  font-size: 18px;
+}
+
+.owl-nav {
+  position: relative;
+}
+
+.owl-nav .owl-prev {
+  margin-right: 50px;
 }
 
 /*==========  Desktop First  ==========*/
@@ -20256,6 +20329,42 @@ svg.hidden-sprite {
   .cost .cost__item__img--3 {
     margin-top: -10%;
     margin-bottom: 20px;
+  }
+  .slider__buyout .buyout__item {
+    max-width: 162px;
+    text-align: center;
+    margin: 0 auto;
+    background-size: 30%;
+    padding-top: 80px;
+  }
+  .slider__buyout .buyout__item:before {
+    display: none;
+  }
+  .slider__buyout .buyout__desc {
+    font-size: 9px;
+    font-weight: 600;
+  }
+  .slider__buyout .buyout__title {
+    font-size: 12px;
+  }
+  .owl-nav {
+    position: relative;
+  }
+  .owl-nav .owl-prev, .owl-nav .owl-next {
+    position: absolute;
+    bottom: 100%;
+    left: 70%;
+    -webkit-transform: translate(100%, -407%);
+        -ms-transform: translate(100%, -407%);
+            transform: translate(100%, -407%);
+  }
+  .owl-nav .owl-prev {
+    left: 19%;
+    -webkit-transform: translate(0%, -407%);
+        -ms-transform: translate(0%, -407%);
+            transform: translate(0%, -407%);
+    opacity: 0.3;
+    display: none;
   }
 }
 

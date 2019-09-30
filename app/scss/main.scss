@@ -396,6 +396,12 @@ svg {
 	}
 }
 
+.cost__bg__wrap {
+	background-color: #eee;
+	width: 100%;
+	height: 100%;
+}
+
 .cost {
 	.cost__desc {
 		line-height: 27px;
@@ -421,6 +427,7 @@ svg {
 	.cost__item__img {
 		margin-top: -3%;
 		width: 100%;
+		min-height: 235px;
 		background-repeat: no-repeat;
 		background-size: contain;
 		background-position: center top;
@@ -441,5 +448,65 @@ svg {
 		background-image: url(../img/oldnew.png);
 	}
 }
+
+.slider__buyout {
+	.owl-carousel {
+		position: relative;
+	}
+	.buyout__item {
+	max-width: 340px;
+	margin: 0 auto;
+	padding-top: 130px;
+	background-repeat: no-repeat;
+	background-position: center 0%;
+	&:before {
+		content: '🡢';
+		font-size: 35px;
+		position: relative;
+		top: 0%;
+    right: -63%;
+	}
+	}
+	.buyout__item--1 {	
+		background-size: 90px;
+		background-image: url(../img/ring_icon.png);
+		}
+	.buyout__item--2 {
+		background-size: 110px;
+		background-image: url(../img/expertiza_icon.png);
+		}
+	.buyout__item--3 {
+		background-size: 146px;
+		background-image: url(../img/stoimost_icon.png);
+		}
+	.buyout__item--4 {
+		background-size: 146px;
+		background-image: url(../img/deal_icon.png);
+		&:before {
+			display: none;
+		}
+		}
+	.buyout__title {
+		font-weight: 700;
+		line-height: normal;
+		font-size: 24px;
+		text-transform: uppercase;
+	}
+	.buyout__desc {
+		font-weight: 600;
+		line-height: normal;
+		font-size: 18px;
+	}
+}
+
+
+
+.owl-nav {
+	position: relative;
+		.owl-prev {
+			margin-right: 50px;
+		}
+	}
+
 
 @import "media"; // Always at the end

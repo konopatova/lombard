@@ -178,8 +178,42 @@
 		}
 	}
 
+	.slider__buyout {
+		.buyout__item {
+			max-width: 162px;
+			text-align: center;
+			margin: 0 auto;
+			background-size: 30%;
+			padding-top: 80px;
+			&:before {
+				display: none;
+				}
+		}
+		.buyout__desc {
+		font-size: 9px;
+		font-weight: 600;
+		}
+		.buyout__title {
+		font-size: 12px;
+		}
+	}
+	.owl-nav {
+		position: relative;
+			.owl-prev, .owl-next {
+				position: absolute;
+				bottom: 100%;
+				left: 70%;
+				transform: translate(100%, -407%);
+			}
+			.owl-prev {
+				left: 19%;
+				transform: translate(0%, -407%);
+				opacity: 0.3;
+				display: none;
+			}
+		}
 
-
+		
 }
 
 /*==========  Mobile First  ==========*/
