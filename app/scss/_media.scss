@@ -21,6 +21,12 @@
 		display: none;
 	}
 	
+	
+.reviews {
+	.reviews__item {
+		max-width: 500px;
+	}
+	}
 
 }
 
@@ -47,6 +53,13 @@
 		max-width: 377px;
 	}
 }
+
+.reviews {
+	.reviews__item {
+		max-width: 350px;
+	}
+	}
+
 	
 }
 
@@ -178,7 +191,22 @@
 		}
 	}
 
-	.slider__buyout {
+	.slider__buyout {	
+		.owl-nav {
+		position: relative;
+			.owl-prev, .owl-next {
+				position: absolute;
+				bottom: 100%;
+				left: 70%;
+				transform: translate(100%, -407%);
+			}
+			.owl-prev {
+				left: 19%;
+				transform: translate(0%, -407%);
+				opacity: 0.3;
+				display: none;
+			}
+		}
 		.buyout__item {
 			max-width: 162px;
 			text-align: center;
@@ -197,23 +225,65 @@
 		font-size: 12px;
 		}
 	}
-	.owl-nav {
-		position: relative;
-			.owl-prev, .owl-next {
-				position: absolute;
-				bottom: 100%;
-				left: 70%;
-				transform: translate(100%, -407%);
-			}
-			.owl-prev {
-				left: 19%;
-				transform: translate(0%, -407%);
-				opacity: 0.3;
-				display: none;
-			}
-		}
 
-		
+	.prof {
+		.prof__desc {
+			font-size: 12px;
+			font-weight: 600;
+			line-height: 1.25;
+		}
+	}
+
+	
+.about__black {
+	.about__black__text {
+		font-size: 11px;
+		font-weight: 400;
+	}
+}
+
+.reviews {
+	.reviews__item {
+		font-size: 11px;
+		max-width: 260px;
+		&:before {
+			content: '';
+			background-size: 11px;
+			width: 11px;
+			left: -20px;
+		}
+		.reviews__item__text {
+		min-height: 160px;
+		margin-bottom: 38px;
+		}
+	}
+	.blockquote__footer {
+		font-size: 14px;
+		text-align: center;
+		margin-top: 0;
+		left: 0;
+		span {
+			margin-top: 14px;
+			font-size: 8px;
+		}
+	}
+	.owl-nav {
+		font-size: 25px;
+		font-weight: 300;
+	}
+	.owl-prev {
+		position: absolute;
+		left: 4vw;
+		top: 40%;
+	}
+	.owl-next {
+		position: absolute;
+		right: 4vw;
+		top: 40%;
+	}
+}
+
+
 }
 
 /*==========  Mobile First  ==========*/
