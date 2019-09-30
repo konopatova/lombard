@@ -19753,7 +19753,7 @@ a {
 
 a:hover {
   text-decoration: none;
-  color: #fb565a;
+  color: green;
   -webkit-transition: all 0.25s ease-in-out;
   -o-transition: all 0.25s ease-in-out;
   transition: all 0.25s ease-in-out;
@@ -19791,7 +19791,7 @@ svg.hidden-sprite {
   width: 100%;
   left: 0;
   bottom: -22%;
-  background-color: #fb565a;
+  background-color: white;
 }
 
 .menu .menu__item:hover:after {
@@ -19801,7 +19801,7 @@ svg.hidden-sprite {
   width: 100%;
   left: 0;
   bottom: -22%;
-  background-color: #fb565a;
+  background-color: white;
   -webkit-transition: 0.3s ease all;
   -o-transition: 0.3s ease all;
   transition: 0.3s ease all;
@@ -20132,7 +20132,6 @@ svg.hidden-sprite {
   padding-top: 130px;
   background-repeat: no-repeat;
   background-position: center 0%;
-  cursor: pointer;
 }
 
 .slider__buyout .buyout__item:before {
@@ -20308,7 +20307,7 @@ svg.hidden-sprite {
 
 .footer__contacts .footer__link:hover {
   text-decoration: underline;
-  color: #fb565a;
+  color: green;
 }
 
 .footer__contacts .footer__logo {

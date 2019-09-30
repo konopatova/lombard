@@ -142,7 +142,7 @@ a {
 	color: $text;
 	&:hover {
 		text-decoration: none;
-		color: $accent;
+		color: green;
 		transition: all 0.25s ease-in-out;
 	} 
 }
@@ -167,7 +167,7 @@ svg {
 			width: 100%;
 			left: 0;
 			bottom: -22%;
-			background-color: $accent;
+			background-color: white;
 		}
 		&:hover:after {
 			content: '';
@@ -176,7 +176,7 @@ svg {
 			width: 100%;
 			left: 0;
 			bottom: -22%;
-			background-color: $accent;
+			background-color: white;
 			transition: 0.3s ease all;
 			animation: 0.5s ease-in-out show;
 		}
@@ -465,7 +465,6 @@ svg {
 	padding-top: 130px;
 	background-repeat: no-repeat;
 	background-position: center 0%;
-	cursor: pointer;
 	&:before {
 		content: '🡢';
 		font-size: 35px;
@@ -621,7 +620,7 @@ svg {
 		transition: all 0.3 linear;
 		&:hover {
 			text-decoration: underline;
-			color: $accent;
+			color: green;
 		}
 	}
 	.footer__logo {
