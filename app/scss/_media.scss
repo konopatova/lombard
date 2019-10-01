@@ -15,13 +15,18 @@
 		text-align: center;
 	}
 
-	.header__social__list,
+	.header__link.social__icon__link,
 	.header__phone, 
 	.menu {
 		display: none;
 	}
-	
-	
+	.header__link.social__icon__link.icon__search {
+		display: block;
+		position: absolute;
+		right: 4%;
+		margin-top: -5%;
+	}
+
 .reviews {
 	.reviews__item {
 		max-width: 500px;
@@ -51,11 +56,19 @@
 		}
 	}
 
-	.header__social__list,
+	.header__link.social__icon__link,
 	.header__phone, 
 	.menu {
 		display: none;
 	}
+
+	.header__link.social__icon__link.icon__search {
+		display: block;
+		position: absolute;
+		right: 3%;
+		margin-top: -8%;
+	}
+
 
 	.why {
 	.comparison__main {
@@ -121,15 +134,24 @@
 		}	
 	}
 	
-	.header__social__list,
+
+	.header__link.social__icon__link,
 	.header__phone, 
 	.menu {
 		display: none;
 	}
-	 .header {
-		 max-height: 670px;
-		 min-height: 500px;
-	 }
+
+	.header__link.social__icon__link.icon__search {
+		display: block;
+		position: absolute;
+		right: 4%;
+		margin-top: -8%;
+	}
+
+	.header {
+		max-height: 670px;
+		min-height: 500px;
+	}
 
  .center__title {
 		font-size: 20px;
@@ -311,7 +333,11 @@
 	}
 
  .burger__label {
-		display: block; 
+		display: block;
+		.burger__icon {
+			top: 3%;
+			left: 7%;
+		}
 	 }
 
 }
