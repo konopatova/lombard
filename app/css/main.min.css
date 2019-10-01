@@ -19848,6 +19848,7 @@ svg.hidden-sprite {
 
 .header__phone {
   will-change: transform;
+  white-space: nowrap;
 }
 
 .header__phone:hover {
