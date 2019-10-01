@@ -19823,6 +19823,7 @@ svg.hidden-sprite {
      -moz-user-select: none;
       -ms-user-select: none;
           user-select: none;
+  will-change: transform;
 }
 
 .logo__block img:hover {
@@ -19843,6 +19844,10 @@ svg.hidden-sprite {
   -webkit-justify-content: space-between;
       -ms-flex-pack: justify;
           justify-content: space-between;
+}
+
+.header__phone {
+  will-change: transform;
 }
 
 .header__phone:hover {
