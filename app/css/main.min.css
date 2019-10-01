@@ -20438,6 +20438,10 @@ svg.hidden-sprite {
   background-repeat: no-repeat;
 }
 
+#menuToggle {
+  display: none;
+}
+
 .burger__label {
   cursor: pointer;
 }
@@ -20452,14 +20456,11 @@ svg.hidden-sprite {
   background-size: contain;
 }
 
-#menuToggle {
-  display: none;
-}
-
 .menu__mobile {
-  width: 320px;
-  height: 660px;
+  max-width: 0;
+  max-height: 0;
   padding: 58px 50px;
+  visibility: hidden;
   position: absolute;
   overflow: hidden;
   top: 10vh;
@@ -20475,6 +20476,7 @@ svg.hidden-sprite {
   background-color: white;
   -webkit-box-shadow: 3px 1px 10px #494949;
           box-shadow: 3px 1px 10px #494949;
+  will-change: transition;
 }
 
 .menu__mobile .menu {
@@ -20538,6 +20540,16 @@ svg.hidden-sprite {
   background-repeat: no-repeat;
 }
 
+#menuToggle:checked ~ .menu__mobile {
+  max-width: 320px;
+  max-height: 660px;
+  -webkit-transition: max-height .45s ease-in, max-width .45s ease-in;
+  -o-transition: max-height .45s ease-in, max-width .45s ease-in;
+  transition: max-height .45s ease-in, max-width .45s ease-in;
+  z-index: 10;
+  visibility: visible;
+}
+
 .btn__mobile {
   color: white;
   width: 100%;
@@ -20549,12 +20561,6 @@ svg.hidden-sprite {
   letter-spacing: 2px;
   background-color: black;
   border-radius: 0;
-}
-
-#menuToggle:checked ~ .menu__mobile {
-  display: block;
-  overflow: hidden;
-  z-index: 10;
 }
 
 .menu__mobile__info {

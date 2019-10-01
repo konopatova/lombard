@@ -715,7 +715,11 @@ svg {
 }
 }
 
+///////////////***************menu__mobile**************///////////////////
 
+#menuToggle {
+ display: none; 
+}
 
 .burger__label {
 	cursor: pointer;
@@ -730,18 +734,11 @@ svg {
 		}
 }
 
-///////////////***************menu__mobile**************///////////////////
-
-#menuToggle {
- display: none; 
-}
-
 .menu__mobile {
-		//	max-width: 0;
-	//	max-height: 0;
-	width: 320px;
-	height: 660px;
+	max-width: 0;
+	max-height: 0;
 	padding: 58px 50px;
+	visibility: hidden;
 	position: absolute;
 	overflow: hidden;
 	top: 10vh;
@@ -751,6 +748,7 @@ svg {
 	user-select: none;
 	background-color: white;
 	box-shadow: 3px 1px 10px #494949;
+	will-change: transition;
 	.menu {
 		font-size: 16px;
 		margin-bottom: 44px;
@@ -802,6 +800,15 @@ svg {
 	}
 }
 
+
+#menuToggle:checked ~ .menu__mobile {
+	max-width: 320px;
+	max-height: 660px;
+	transition: max-height .45s ease-in, max-width .45s ease-in;
+	z-index: 10;
+	visibility: visible;
+}
+
 .btn__mobile {
 	color: white;
 	width: 100%;
@@ -813,15 +820,6 @@ svg {
 	letter-spacing: 2px;
 	background-color: black;
 	border-radius: 0;
-}
-
-#menuToggle:checked ~ .menu__mobile {
-	display: block;
-//	max-width: 100%;
-//	max-height: 600px;
-	overflow: hidden;
-//	transition: max-height .45s ease-in, max-width .45s ease-in;
-	z-index: 10;
 }
 
 .menu__mobile__info {
