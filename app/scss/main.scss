@@ -526,6 +526,10 @@ svg {
 	opacity: 0.4;
 }
 
+.owl-item.active {
+	opacity: 1;
+}
+
 .prof {
 	.prof__desc {
 		max-width: 1326px;
@@ -717,13 +721,16 @@ svg {
 
 ///////////////***************menu__mobile**************///////////////////
 
-#menuToggle {
+#menuToggle, .burger__label {
  display: none; 
 }
 
 .burger__label {
 	cursor: pointer;
 	.burger__icon {
+		position: absolute;
+		top: 3%;
+		left: 7%;
 		cursor: pointer;
 		display: block;
 		width: 24px;
@@ -731,24 +738,23 @@ svg {
 		background-image: url(../img/burger.png);
 		background-repeat: no-repeat;
 		background-size: contain;
+		z-index: 3;
 		}
 }
 
 .menu__mobile {
-	max-width: 0;
-	max-height: 0;
 	padding: 58px 50px;
-	visibility: hidden;
+	width: 320px;
+	height: 640px;
 	position: absolute;
 	overflow: hidden;
-	top: 10vh;
-	left: 4vw;
-	transition: max-height .4s ease-out, max-width .4s ease-in;
+	top: 0vh;
+	left: 0vw;
 	z-index: 2;
 	user-select: none;
 	background-color: white;
 	box-shadow: 3px 1px 10px #494949;
-	will-change: transition;
+	display: none;
 	.menu {
 		font-size: 16px;
 		margin-bottom: 44px;
@@ -800,13 +806,14 @@ svg {
 	}
 }
 
-
 #menuToggle:checked ~ .menu__mobile {
-	max-width: 320px;
-	max-height: 660px;
-	transition: max-height .45s ease-in, max-width .45s ease-in;
-	z-index: 10;
-	visibility: visible;
+	display: block;
+}
+
+#menuToggle:checked ~ .burger__label .burger__icon {
+	position: absolute;
+	background-image: url(../img/close.png);
+	z-index: 3;
 }
 
 .btn__mobile {

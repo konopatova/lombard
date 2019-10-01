@@ -60,7 +60,10 @@
 	}
 	}
 
-	
+	.burger__label {
+		display: block; 
+	 }
+
 }
 
 // ≥576px
@@ -80,6 +83,7 @@
 	
 	.header__text {
 		font-size: 10px;
+		max-width: 205px;
 	}
 	.sub__title {
 		font-size: 19px;
@@ -173,21 +177,12 @@
 			text-align: center;
 			font-weight: 600;
 		}
-		.cost__item {
-			display: flex;
-			flex-flow: row wrap;
-		 	max-height: 0px;
-		
-		}
 		.cost__item__img {
-			margin-top: -5%;
-			height: 220px;
-			margin-bottom: 0;
-			align-self: flex-start;
+			max-width: 80%;
 		}
 		.cost__item__img--3 {
 			margin-top: -10%;
-			margin-bottom: 20px;;
+			margin-bottom: 20px;
 		}
 	}
 
@@ -304,6 +299,10 @@
 	}
 }
 	}
+
+ .burger__label {
+		display: block; 
+	 }
 
 }
 

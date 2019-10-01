@@ -243,6 +243,7 @@ $(document).ready(function(){
 ] 
 }]			
 });
+
 		new google.maps.Marker({
 				position: o,
 				map: e,
@@ -254,4 +255,5 @@ $(document).ready(function(){
 				},
 				title: "Ломбард32",
 		})
-	}
+
+};
