@@ -19630,13 +19630,13 @@ html {
 }
 
 ::-moz-selection {
-  background-color: #fb565a;
-  color: black;
+  background-color: black;
+  color: white;
 }
 
 ::selection {
-  background-color: #fb565a;
-  color: black;
+  background-color: black;
+  color: white;
 }
 
 .container {
@@ -19816,6 +19816,10 @@ svg.hidden-sprite {
 .nav {
   background-color: #0d2830;
   color: white;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
 }
 
 .logo__block {

@@ -33,8 +33,8 @@
 }
 
 ::selection {
-	background-color: $accent;
-	color: black;
+	background-color: black;
+	color: white;
 }
 
 .container {
@@ -190,6 +190,7 @@ svg {
 .nav {
 	background-color: #0d2830;
 	color: white;
+	user-select: none;
 }
 
 .logo__block {
