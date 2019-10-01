@@ -20592,6 +20592,12 @@ svg.hidden-sprite {
   .reviews .reviews__item {
     max-width: 500px;
   }
+  .burger__label {
+    display: block;
+  }
+  .burger__label .burger__icon {
+    top: 2%;
+  }
 }
 
 @media (max-width: 767.98px) {
