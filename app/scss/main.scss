@@ -755,6 +755,8 @@ svg {
 	user-select: none;
 	background-color: white;
 	box-shadow: 3px 1px 10px #494949;
+	transition: all .3s ease-out;
+	will-change: display;
 	display: none;
 	.menu {
 		font-size: 16px;
@@ -809,6 +811,7 @@ svg {
 
 #menuToggle:checked ~ .menu__mobile {
 	display: block;
+	transition: all .3s ease-out;
 }
 
 #menuToggle:checked ~ .burger__label .burger__icon {
