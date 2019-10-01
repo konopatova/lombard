@@ -19602,9 +19602,9 @@ html {
 
 ::-webkit-scrollbar-thumb {
   width: 6px;
-  background-color: #fb565a;
+  background-color: black;
   cursor: pointer;
-  border-radius: 30px;
+  border-radius: 0;
   -webkit-box-shadow: 0px 1px 1px #fff inset;
           box-shadow: 0px 1px 1px #fff inset;
 }
@@ -19641,15 +19641,12 @@ html {
 
 .container {
   width: 100%;
+  min-width: 320px;
   max-width: 1920px;
   margin: 0 auto;
   position: relative;
 }
 
-/*
-.wrapper {
-	max-width: 1920px;
-}*/
 html, body {
   height: 100%;
 }
@@ -19674,7 +19671,7 @@ body {
 }
 
 body input, body textarea {
-  border: #d7dcde 2px solid;
+  border: grey 2px solid;
   outline: none;
 }
 
@@ -19697,15 +19694,6 @@ footer {
   /*Минус Высота футера*/
   height: 560px;
   /*Высота футера*/
-}
-
-.is-active {
-  display: block;
-  visibility: visible;
-}
-
-.hidden {
-  display: none;
 }
 
 .img-responsive {
@@ -19753,7 +19741,7 @@ a {
 
 a:hover {
   text-decoration: none;
-  color: green;
+  color: white;
   -webkit-transition: all 0.25s ease-in-out;
   -o-transition: all 0.25s ease-in-out;
   transition: all 0.25s ease-in-out;
@@ -19783,7 +19771,11 @@ svg.hidden-sprite {
   position: relative;
 }
 
-.menu .menu__item.active:after {
+.menu .menu__item:last-child {
+  margin-right: 0;
+}
+
+.link.active:after {
   /*active links*/
   content: '';
   position: absolute;
@@ -19794,7 +19786,7 @@ svg.hidden-sprite {
   background-color: white;
 }
 
-.menu .menu__item:hover:after {
+.link:hover:after {
   content: '';
   position: absolute;
   height: 4px !important;
@@ -19807,15 +19799,6 @@ svg.hidden-sprite {
   transition: 0.3s ease all;
   -webkit-animation: 0.5s ease-in-out show;
           animation: 0.5s ease-in-out show;
-}
-
-.menu .menu__item:last-child {
-  margin-right: 0;
-}
-
-.menu .menu__item__link {
-  color: white;
-  font-weight: 500;
 }
 
 .header {
@@ -19832,6 +19815,7 @@ svg.hidden-sprite {
 
 .nav {
   background-color: #0d2830;
+  color: white;
 }
 
 .logo__block {
@@ -19850,10 +19834,6 @@ svg.hidden-sprite {
   transition: all 0.3s ease-in-out;
 }
 
-.icon {
-  color: white;
-}
-
 .header__social__list {
   display: -webkit-box;
   display: -webkit-flex;
@@ -19865,8 +19845,26 @@ svg.hidden-sprite {
           justify-content: space-between;
 }
 
+.header__phone:hover {
+  -webkit-transform: scale(1.1);
+      -ms-transform: scale(1.1);
+          transform: scale(1.1);
+  -webkit-transition: all 0.3s ease-in-out;
+  -o-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+}
+
 .header__link {
   color: white;
+  font-weight: 500;
+}
+
+.header__link:hover {
+  color: white;
+  text-decoration: none;
+  -webkit-transition: all 0.25s ease-in-out;
+  -o-transition: all 0.25s ease-in-out;
+  transition: all 0.25s ease-in-out;
 }
 
 .header__link.social__icon__link {
@@ -20299,15 +20297,10 @@ svg.hidden-sprite {
 
 .footer__contacts .footer__link {
   color: white;
-  font-weight: 500;
-  -webkit-transition: all 0.3 linear;
-  -o-transition: all 0.3 linear;
-  transition: all 0.3 linear;
 }
 
 .footer__contacts .footer__link:hover {
   text-decoration: underline;
-  color: green;
 }
 
 .footer__contacts .footer__logo {

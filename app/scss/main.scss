@@ -22,9 +22,9 @@
 
 ::-webkit-scrollbar-thumb {
 	width: 6px;
-	background-color: $accent;
+	background-color: black;
 	cursor: pointer;
-	border-radius: 30px;
+	border-radius: 0;
 	box-shadow:0px 1px 1px #fff inset;
 }
 
@@ -39,16 +39,11 @@
 
 .container {
 	width: 100%;
-	//min-width: 420px;
+	min-width: 320px;
 	max-width: 1920px;
 	margin: 0 auto;
 	position: relative;
 }
-
-/*
-.wrapper {
-	max-width: 1920px;
-}*/
 
 html, body {
 	height: 100%;
@@ -71,7 +66,7 @@ body {
 	color: $text;
 	background-color: $bg;
 	input, textarea {
-		border: $static 2px solid;
+		border: grey 2px solid;
 		outline: none;
 		&:focus:required:invalid {
       color: $wrong;
@@ -92,15 +87,6 @@ footer {
   /*Минус Высота футера*/
   height: 560px;
   /*Высота футера*/
-}
-
-.is-active {
-	display: block;
-	visibility: visible;
-}
-
-.hidden {
-	display: none;
 }
 
 .img-responsive {
@@ -142,7 +128,7 @@ a {
 	color: $text;
 	&:hover {
 		text-decoration: none;
-		color: green;
+		color: white;
 		transition: all 0.25s ease-in-out;
 	} 
 }
@@ -160,33 +146,33 @@ svg {
 	.menu__item {
 		margin-right: 40px;
 		position: relative;
-		&.active:after { /*active links*/
-			content: '';
-			position: absolute;
-			height: 2px !important;
-			width: 100%;
-			left: 0;
-			bottom: -22%;
-			background-color: white;
-		}
-		&:hover:after {
-			content: '';
-			position: absolute;
-			height: 4px !important;
-			width: 100%;
-			left: 0;
-			bottom: -22%;
-			background-color: white;
-			transition: 0.3s ease all;
-			animation: 0.5s ease-in-out show;
-		}
 		&:last-child {
 			margin-right: 0;
 		}
 	}
-	.menu__item__link {
-		color: white;
-		font-weight: 500;
+}
+
+
+.link {
+	&.active:after { /*active links*/
+		content: '';
+		position: absolute;
+		height: 2px !important;
+		width: 100%;
+		left: 0;
+		bottom: -22%;
+		background-color: white;
+	}
+	&:hover:after {
+		content: '';
+		position: absolute;
+		height: 4px !important;
+		width: 100%;
+		left: 0;
+		bottom: -22%;
+		background-color: white;
+		transition: 0.3s ease all;
+		animation: 0.5s ease-in-out show;
 	}
 }
 
@@ -204,6 +190,7 @@ svg {
 
 .nav {
 	background-color: #0d2830;
+	color: white;
 }
 
 .logo__block {
@@ -216,16 +203,26 @@ svg {
 	}
 }
 
-.icon {
-	color:white;
-}
 .header__social__list {
 	display: flex;
 	justify-content: space-between;
 }
 
+.header__phone {
+	&:hover {
+		transform: scale(1.1);
+		transition: all 0.3s ease-in-out;
+	}
+}
+
 .header__link {
 	color: white;
+	font-weight: 500;
+	&:hover {
+		color: white;
+		text-decoration: none;
+		transition: all 0.25s ease-in-out;
+	}
 	&.social__icon__link {	
 		max-width: 30px;
 		max-height: 30px;
@@ -309,8 +306,6 @@ svg {
 
 .header__item {
 	max-width: 340px;	
-//	max-height: 340px;
-//	height: 100%;
 	padding: 20px;
 	cursor: pointer;
 	img {
@@ -616,11 +611,8 @@ svg {
 	}
 	.footer__link {
 		color: white;
-		font-weight: 500;
-		transition: all 0.3 linear;
 		&:hover {
 			text-decoration: underline;
-			color: green;
 		}
 	}
 	.footer__logo {
