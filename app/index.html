@@ -20,9 +20,53 @@
 </head>
 <body>
 		<header class="header">
-				<div class="nav">
+				<div class="nav">		
+					<div class="burger__block">
+							<input id="menuToggle" type="checkbox">
+							<label for="menuToggle" class="burger__label">
+								<span class="burger__icon"></span>
+							</label> </div>
+
+							<div class="menu__mobile">
+									<ul class="menu d-flex flex-column">
+											<li class="menu__item">
+												<a href="#" class="menu__item__link link">Команда</a>
+											</li>
+											<li class="menu__item">
+												<a href="#" class="menu__item__link link">Отзывы</a>
+											</li>
+											<li class="menu__item">
+													<a href="#" class="menu__item__link link">Контакты</a>
+											</li>
+										</ul>
+
+										<a class="btn btn__mobile mb-5" href="#">Оценить</a>
+
+										<div class="menu__mobile__info mb-3">
+										<div class="mobile__adress mobile__item mb-4">Москва, Ленина 30/3, стр. 2 </div>
+										<div class="mobile__time mobile__item mb-4">
+													10:00–20:00 в будни
+											<br>11:00–18:00 в субботу
+											</div>
+										<div class="mobile__phone mobile__item mb-4">
+												<a href="tel:+74951234567" class="footer__link link">+7 495 123-45-67</a>
+										</div>
+										<div class="mobile__email mobile__item mb-4">
+												<a href="mailto:lombard@lombard.ru" class="footer__link link">lombard@lombard.ru</a>
+									</div>
+									<div class="mobile__social">
+									<a href="#" class="social__icon__link" title="Telegram">Telegram</a>
+									<a href="#" class="social__icon__link" title="Whatsapp">Whatsapp</a>
+									<a href="#" class="social__icon__link" title="Viber">Viber</a>
+									</div>
+							</div>
+						</div>
+
+
+
+
 					<div class="container row align-items-center pt-3 pb-3 px-3 px-lg-6 px-xl-7 px-md-5">
-				
+
 					<div class="col-12 col-md-4 col-sm-4">
 						<div class="logo__block">
 					<a href="#" class="header__logo__link">
@@ -123,7 +167,7 @@
 				<div class="row col-lg-12 text-center m-auto justify-content-center px-3 px-lg-6 px-xl-7 px-md-5">
 					<h3 class="center__title mb-5">20 лет оцениваем</h3>
 				</div>
-				<div class="row col-lg-12 text-center m-auto justify-content-center px-3 px-lg-6 px-xl-7 px-md-5">
+				<div class="row col-lg-12 text-center m-auto justify-content-center px-lg-6 px-xl-7 px-md-5">
 					<div class="col-4">
 						<svg class="img-responsive mx-auto"><use xlink:href="#diamond"/></svg>
 						<p class="adv__desc mt-3 mt-lg-5">Драгоценные камни</p>
@@ -217,7 +261,7 @@
 													</p>
 										</div>
 									</div>
-							<div class="cost__item flex-wrap d-flex  justify-content-center flex-lg-row justify-content-lg-around mb-2 mb-lg-5">
+							<div class="cost__item flex-wrap d-flex  justify-content-center flex-lg-row justify-content-lg-around mb-2 mt-4 mb-lg-5">
 									<div class="cost__item__img cost__item__img--4 col-lg-5 col-12"></div>
 									<div class="cost__item__desc col-lg-5 col-12">
 										<h4 class="cost__item__title">Сертификат</h4>
@@ -240,7 +284,7 @@
 			<section class="buyout container pt-4 py-lg-6">
 				<div class="row col-lg-12 text-center mx-auto justify-content-center flex-column align-items-center">
 					<h3 class="center__title mb-4 mb-lg-6 px-lg-9">Как происходит выкуп</h3>
-					<div class="slider__buyout owl-carousel row col-lg-12 text-center px-lg-7">
+					<div class="slider__buyout owl-carousel row text-center px-lg-7">
 						<div class="buyout__item buyout__item--1">
 							<h5 class="buyout__title">Информация
 								<br>  о предмете оценки</h5>
@@ -280,7 +324,7 @@
 								Мы сотрудничаем только со специалистами, аттестованными в Геммологическом институте Америки (GIA), которые имеют опыт работы на изумрудной бирже, производстве бриллиантов компании «АЛРОСА», отборе драгоценных камней на Шри-Ланке, в Таиланде и других мировых месторождениях.</p>
 						</div>
 
-						<div class="slider__prof owl-carousel row col-lg-12 text-center mx-auto justify-content-around px-3 px-lg-7 px-xl-7 px-md-5">
+						<div class="slider__prof owl-carousel row text-center mx-auto justify-content-around px-lg-7 px-xl-7 px-md-5">
 							<div class="slider__prof__item">
 								<img src="./img/userpic.png" alt="Специлист" class="prof__item__img img-responsive mx-auto">
 									<h5 class="prof__item__title mt-3 mt-lg-5">Владислав Соколовский </h5>

@@ -152,7 +152,6 @@ svg {
 	}
 }
 
-
 .link {
 	&.active:after { /*active links*/
 		content: '';
@@ -313,7 +312,13 @@ svg {
 	cursor: pointer;
 	img {
 		margin: 10px;
-	}	
+		will-change: transform;
+		overflow: visible;	
+		&:hover {
+		transform: scale(0.96);
+		transition: all 0.3s ease-in-out;
+		}
+	}
 	&:before {
 		content: '';
     border: 1px solid #858585;
@@ -322,12 +327,13 @@ svg {
 		max-width: 350px;
 		height: 100%;	
 		max-height: 350px;
-    bottom: 0;
-	}
+		bottom: 0;	
 	.header__item__desc {
 		font-family: 'Helvetica NC';
 		font-size: 24px;
+		overflow: visible;
 		}	
+}
 }
 
 .header__item__wrapper {
@@ -343,6 +349,11 @@ svg {
 .advantages {
 	svg {
 		max-width: 120px;
+		will-change: transform;
+			&:hover {
+				transform: scale(1.2);
+				transition: all 0.3s ease-in-out;
+			}
 	}
 	.adv__desc {
 		font-weight: 700;
@@ -421,6 +432,7 @@ svg {
 		line-height: 1.6;
 		font-weight: 400;
 		max-width: 540px;
+		z-index: 2;
 	}
 	.cost__item__img {
 		margin-top: -3%;
@@ -429,6 +441,7 @@ svg {
 		background-repeat: no-repeat;
 		background-size: contain;
 		background-position: center top;
+		z-index: 1;
 	}
 	.cost__item__img--1 {
 		background-image: url(../img/diamonds.jpg);
@@ -463,6 +476,12 @@ svg {
 	padding-top: 130px;
 	background-repeat: no-repeat;
 	background-position: center 0%;
+	will-change: transform;
+	overflow: visible;	
+	&:hover {
+	transform: scale(0.96);
+	transition: all 0.3s ease-in-out;
+	}
 	&:before {
 		content: '🡢';
 		font-size: 35px;
@@ -515,6 +534,12 @@ svg {
 		max-width: 242px;
 		margin: 0 auto;
 		cursor: pointer;
+		will-change: transform;
+		overflow: visible;	
+		&:hover {
+		transform: scale(0.96);
+		transition: all 0.3s ease-in-out;
+		}
 	}
 	.prof__item__img {
 		max-width: 210px;
@@ -689,5 +714,125 @@ svg {
 		}
 }
 }
+
+
+
+.burger__label {
+	cursor: pointer;
+	.burger__icon {
+		cursor: pointer;
+		display: block;
+		width: 24px;
+		height: 24px;
+		background-image: url(../img/burger.png);
+		background-repeat: no-repeat;
+		background-size: contain;
+		}
+}
+
+///////////////***************menu__mobile**************///////////////////
+
+#menuToggle {
+ display: none; 
+}
+
+.menu__mobile {
+		//	max-width: 0;
+	//	max-height: 0;
+	width: 320px;
+	height: 660px;
+	padding: 58px 50px;
+	position: absolute;
+	overflow: hidden;
+	top: 10vh;
+	left: 4vw;
+	transition: max-height .4s ease-out, max-width .4s ease-in;
+	z-index: 2;
+	user-select: none;
+	background-color: white;
+	box-shadow: 3px 1px 10px #494949;
+	.menu {
+		font-size: 16px;
+		margin-bottom: 44px;
+		color: #464646;
+		.menu__item {
+			margin-right: 0;
+			margin-bottom: 18px;
+		}
+		.menu__item__link {
+			color: #464646;
+			margin-right: 0;
+			&:hover {
+				text-decoration: underline;
+				transition: all 0.02s linear;
+			}
+		}
+	}
+	.social__icon__link {	
+		max-width: 40px;
+		max-height: 40px;
+		position: relative;
+		font-size: 0;
+		display: inline-block;
+		transition: all 0.6s ease;
+		margin-right: 10px;
+		cursor: pointer;
+		&:nth-child(1) {
+			width: 40px;
+			background-image: url(../img/telegram_b.png);
+			background-position: center;
+			background-size: contain;
+			background-repeat: no-repeat;
+			}
+			&:nth-child(2) {
+			width: 40px;
+			background-image: url(../img/whatsapp_b.png);
+			background-position: center;
+			background-size: contain;
+			background-repeat: no-repeat;
+			}
+			&:nth-child(3) {
+			margin-right: 0;
+			width: 40px;
+			background-image: url(../img/viber_b.png);
+			background-position: center;
+			background-size: contain;
+			background-repeat: no-repeat;
+			}
+	}
+}
+
+.btn__mobile {
+	color: white;
+	width: 100%;
+	max-width: 211px;
+	padding: 8px 64px;
+	text-align: center;
+	font-size: 12px;
+	text-transform: uppercase;
+	letter-spacing: 2px;
+	background-color: black;
+	border-radius: 0;
+}
+
+#menuToggle:checked ~ .menu__mobile {
+	display: block;
+//	max-width: 100%;
+//	max-height: 600px;
+	overflow: hidden;
+//	transition: max-height .45s ease-in, max-width .45s ease-in;
+	z-index: 10;
+}
+
+.menu__mobile__info {
+	color: black;
+	font-size: 15px;
+	font-weight: 700;
+	.mobile__time {
+		font-size: 14px;
+		font-weight: 400;
+	}
+}
+
 
 @import "media"; // Always at the end
